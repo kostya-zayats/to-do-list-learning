@@ -1,0 +1,15 @@
+.to-do-list-item {
+  display: flex;
+  margin-bottom: 1.6rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  span {
+    cursor: pointer;
+    padding-left: 1.6rem;
+    display: block;
+    flex-grow: 1;
+  }
+}

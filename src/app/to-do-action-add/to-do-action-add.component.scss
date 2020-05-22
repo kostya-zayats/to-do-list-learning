@@ -1,0 +1,14 @@
+.to-do-action-add {
+  display: flex;
+
+  input {
+    flex-grow: 1;
+    border-radius: .4rem 0 0 .4rem;
+    border-right: 0;
+  }
+
+  button {
+    border-radius: 0 .4rem .4rem 0;
+    flex-shrink: 0;
+  }
+}
