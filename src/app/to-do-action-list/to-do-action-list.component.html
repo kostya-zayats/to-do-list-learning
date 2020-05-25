@@ -9,6 +9,11 @@
         <input type="checkbox">
         <span>second task</span>
       </label>
+
+      <label class="to-do-list-item" *ngFor="let toDoItem of toDoList">
+        <input type="checkbox">
+        <span>{{toDoItem.label}}</span>
+      </label>
     </div>
   </div>
 </div>
