@@ -9,10 +9,14 @@ import { ToDoService } from './../to-do.service';
 })
 export class ToDoActionListComponent implements OnInit {
 
-  public toDoList = [];
+  public toDoList = this.toDoService.todos;
   constructor(public toDoService: ToDoService) { }
 
   ngOnInit(): void {
-    this.toDoList = this.toDoService.getToDoList();
+    //this.toDoList = this.toDoService.getToDoList();
+  }
+
+  getArr() {
+    console.log(this.toDoList)
   }
 }

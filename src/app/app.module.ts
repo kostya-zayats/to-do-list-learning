@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ToDoActionAddComponent } from './to-do-action-add/to-do-action-add.component';
 import { ToDoActionListComponent } from './to-do-action-list/to-do-action-list.component';
 import {FormsModule} from "@angular/forms";
+import {ToDoService} from "./to-do.service";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import {FormsModule} from "@angular/forms";
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ToDoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

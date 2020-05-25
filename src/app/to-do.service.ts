@@ -14,9 +14,9 @@ export class ToDoService {
     }
   ];
 
-  getToDoList() {
+  /*getToDoList() {
     return this.todos;
-  }
+  }*/
 
   addToDoItem(newToDo) {
     this.todos.push({label: newToDo});
