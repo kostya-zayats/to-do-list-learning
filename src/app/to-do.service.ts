@@ -1,8 +1,3 @@
-import { Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root'
-})
 export class ToDoService {
 
   constructor() { }
@@ -19,11 +14,12 @@ export class ToDoService {
     }
   ];
 
-  getToDos() {
+  getToDoList() {
     return this.todos;
   }
 
-  addToDo(newToDo) {
-    this.todos.push(newToDo);
+  addToDoItem(newToDo) {
+    this.todos.push({label: newToDo});
+    console.log(this.todos);
   }
 }
