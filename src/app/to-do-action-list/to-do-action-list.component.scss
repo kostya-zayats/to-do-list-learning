@@ -1,6 +1,11 @@
+.to-do-list-item-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+
 .to-do-list-item {
   display: flex;
-  margin-bottom: 1.6rem;
 
   &:last-child {
     margin-bottom: 0;

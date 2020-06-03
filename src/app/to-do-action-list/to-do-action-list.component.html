@@ -1,21 +1,13 @@
 <div class="content-unit">
   <div class="to-do-list">
-    <div class="to-do-list-item-wrap">
+    <div class="to-do-list-item-wrap" *ngFor="let toDoItem of toDoList">
       <label class="to-do-list-item">
-        <input type="checkbox">
-        <span>first task</span>
-      </label>
-      <label class="to-do-list-item">
-        <input type="checkbox">
-        <span>second task</span>
-      </label>
-
-      <label class="to-do-list-item" *ngFor="let toDoItem of toDoList">
         <input type="checkbox">
         <span>{{toDoItem.label}}</span>
       </label>
+      <div class="to-do-list-item">{{toDoItem.time}}</div>
     </div>
 
-    <button (click)="getArr()">get arr</button>
+    <p>{{date | date: 'hh:mm dd/MM/yyyy'}}</p>
   </div>
 </div>

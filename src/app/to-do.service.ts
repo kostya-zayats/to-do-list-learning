@@ -4,22 +4,20 @@ export class ToDoService {
 
   todos = [
     {
-      label: "show objects in array"
+      label: "show objects in array",
+      time: "22:00 15.05.2020"
     },
     {
-      label: "add object to array"
+      label: "add object to array",
+      time: "22:00 15.06.2020"
     },
     {
-      label: "???"
+      label: "???",
+      time: "22:00 04.03.2020"
     }
   ];
 
-  /*getToDoList() {
-    return this.todos;
-  }*/
-
   addToDoItem(newToDo) {
-    this.todos.push({label: newToDo});
-    console.log(this.todos);
+    this.todos.push({label: newToDo, time: "10"});
   }
 }
