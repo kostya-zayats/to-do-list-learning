@@ -14,4 +14,10 @@ export class ToDoActionListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  sortData() {
+    return this.toDoList.sort((a, b) => {
+      return <any>new Date(b.date) - <any>new Date(a.date);
+    });
+  }
 }

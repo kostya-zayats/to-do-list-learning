@@ -8,6 +8,8 @@
       <div class="to-do-list-item">{{toDoItem.date | date: 'hh:mm dd/MM/yyyy'}}</div>
     </div>
 
-    <p>{{date | date: 'hh:mm dd/MM/yyyy'}}</p>
+    <!--<p>{{date | date: 'hh:mm dd/MM/yyyy'}}</p>-->
+
+    <button (click)="sortData()">Sort by date</button>
   </div>
 </div>
