@@ -18,3 +18,17 @@
     flex-grow: 1;
   }
 }
+
+.to-do-list-item-name, .to-do-list-item-date {
+  font-weight: 700;
+}
+
+.to-do-list-item-name {
+  margin-left: 3.2rem;
+}
+
+.to-do-list-item-date {
+  width: 12.9rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}

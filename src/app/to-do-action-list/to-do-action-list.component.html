@@ -1,15 +1,19 @@
-<div class="content-unit">
+<div class="content-unit" *ngIf="toDoList.length > 0">
   <div class="to-do-list">
+    <div class="to-do-list-item-wrap">
+      <div class="to-do-list-item-name">Name</div>
+      <div class="to-do-list-item-date" (click)="sortUpDate()">Date</div>
+    </div>
     <div class="to-do-list-item-wrap" *ngFor="let toDoItem of toDoList">
       <label class="to-do-list-item">
         <input type="checkbox">
         <span>{{toDoItem.label}}</span>
       </label>
-      <div class="to-do-list-item">{{toDoItem.date | date: 'hh:mm dd/MM/yyyy'}}</div>
+      <div class="to-do-list-item">{{toDoItem.date | date: 'hh:mm:ss dd/MM/yyyy'}}</div>
     </div>
 
     <!--<p>{{date | date: 'hh:mm dd/MM/yyyy'}}</p>-->
 
-    <button (click)="sortData()">Sort by date</button>
+    <button (click)="sortLowDate()">Sort by lower date</button>
   </div>
 </div>
