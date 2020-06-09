@@ -15,8 +15,8 @@ export class ToDoActionAddComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addItem(name){
-    this.toDoService.addToDoItem(name);
+  addItem(newToDo){
+    this.toDoService.addToDoItem(newToDo);
   }
 
 }

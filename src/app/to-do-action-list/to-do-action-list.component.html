@@ -5,7 +5,7 @@
         <input type="checkbox">
         <span>{{toDoItem.label}}</span>
       </label>
-      <div class="to-do-list-item">{{toDoItem.time}}</div>
+      <div class="to-do-list-item">{{toDoItem.date | date: 'hh:mm dd/MM/yyyy'}}</div>
     </div>
 
     <p>{{date | date: 'hh:mm dd/MM/yyyy'}}</p>
